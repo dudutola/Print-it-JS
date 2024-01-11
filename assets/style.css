@@ -132,6 +132,12 @@ header {
 #banner .arrow_right {
 	right: 10px;
 }
+.banner-infos {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Gestion des points du carrousel */
 .dots {
 	position: absolute;
