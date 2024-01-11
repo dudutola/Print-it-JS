@@ -29,3 +29,29 @@ arrowLeft.addEventListener('click', (event) => {
 arrowRight.addEventListener('click', (event) => {
   console.log(event)
 })
+
+
+// select dots
+const dots = document.querySelector('.dots')
+// select dots index
+let index = 0;
+
+// for loop, la logique serait que pour chaque tour, le dot symbolise une image
+// afficher les dots
+function displayDots() {
+  for (let i = 0; i < slides.length; i++) {
+    // creer un element
+    const dot = document.createElement('span');
+    // add la classe a l'interieur
+    dot.classList.add('dot');
+    // on place le dot dans dots
+    dots.appendChild(dot);
+
+    // si slides[i] === dot[index] donc on rajoute dot_selected
+    if (i === index) {
+      dot.classList.add('dot_selected');
+    }
+  }
+}
+// call the function(PAS OULIER DAPPELER LA FONCTION)
+displayDots()
